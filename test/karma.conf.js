@@ -16,169 +16,250 @@ module.exports = function (config) {
   // Browsers to run on Sauce Labs
   // Check out https://saucelabs.com/platforms for all browser/OS combos
   var customLaunchers = {
-    'sl_macOS_High_Sierra_Chrome'  : {
-      base        : 'SauceLabs',
-      platform    : 'macOS 10.13',
-      browserName : 'Chrome'
+    'sl_macOS_Catalina_Chrome': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest',
+      "platformName": 'macOS 10.15',
+      "sauce:options": {}
     },
-    'sl_macOS_High_Sierra_Safari'  : {
-      base        : 'SauceLabs',
-      platform    : 'macOS 10.13',
-      browserName : 'Safari'
+    'sl_macOS_Catalina_Chrome_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest-1',
+      "platformName": 'macOS 10.15',
+      "sauce:options": {}
     },
-    'sl_macOS_High_Sierra_Firefox' : {
-      base        : 'SauceLabs',
-      platform    : 'macOS 10.13',
-      browserName : 'Firefox'
+    'sl_macOS_Catalina_Safari': {
+      "base"        : 'SauceLabs',
+      "browserName": 'safari',
+      "browserVersion": 'latest',
+      "platformName": 'macOS 10.15',
+      "sauce:options": {}
     },
-    'sl_macOS_Sierra_Chrome'       : {
-      base        : 'SauceLabs',
-      platform    : 'macOS 10.12',
-      browserName : 'Chrome'
+    'sl_macOS_Catalina_Firefox': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest',
+      "platformName": 'macOS 10.15',
+      "sauce:options": {}
     },
-    'sl_macOS_Sierra_Safari'       : {
-      base        : 'SauceLabs',
-      platform    : 'macOS 10.12',
-      browserName : 'Safari'
+    'sl_macOS_Catalina_Firefox_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest-1',
+      "platformName": 'macOS 10.15',
+      "sauce:options": {}
     },
-    'sl_macOS_Sierra_Firefox'      : {
-      base        : 'SauceLabs',
-      platform    : 'macOS 10.12',
-      browserName : 'Firefox'
+    'sl_macOS_Catalina_Edge': {
+      "base"        : 'SauceLabs',
+      "browserName": 'MicrosoftEdge',
+      "browserVersion": 'latest',
+      "platformName": 'macOS 10.15',
+      "sauce:options": {}
     },
-    'sl_OSX_El_Capitan_Chrome'     : {
-      base        : 'SauceLabs',
-      platform    : 'OS X 10.11',
-      browserName : 'Chrome'
+    'sl_macOS_Catalina_Edge_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'MicrosoftEdge',
+      "browserVersion": 'latest-1',
+      "platformName": 'macOS 10.15',
+      "sauce:options": {}
     },
-    'sl_OSX_El_Capitan_Safari'     : {
-      base        : 'SauceLabs',
-      platform    : 'OS X 10.11',
-      browserName : 'Safari'
+    'sl_macOS_Mojave_Chrome': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest',
+      "platformName": 'macOS 10.14',
+      "sauce:options": {}
     },
-    'sl_OSX_El_Capitan_Firefox'    : {
-      base        : 'SauceLabs',
-      platform    : 'OS X 10.11',
-      browserName : 'Firefox'
+    'sl_macOS_Mojave_Chrome_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest-1',
+      "platformName": 'macOS 10.14',
+      "sauce:options": {}
     },
-    'sl_Win10_Edge_13'             : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 10',
-      browserName : 'MicrosoftEdge',
-      version     : '13.10586'
+    'sl_macOS_Mojave_Safari': {
+      "base"        : 'SauceLabs',
+      "browserName": 'safari',
+      "browserVersion": 'latest',
+      "platformName": 'macOS 10.14',
+      "sauce:options": {}
     },
-    'sl_Win10_Edge_14'             : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 10',
-      browserName : 'MicrosoftEdge',
-      version     : '14.14393'
+    'sl_macOS_Mojave_Firefox': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest',
+      "platformName": 'macOS 10.14',
+      "sauce:options": {}
     },
-    'sl_Win10_Edge_15'             : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 10',
-      browserName : 'MicrosoftEdge',
-      version     : '15.15063'
+    'sl_macOS_Mojave_Firefox_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest-1',
+      "platformName": 'macOS 10.14',
+      "sauce:options": {}
     },
-    'sl_Win10_Edge_16'             : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 10',
-      browserName : 'MicrosoftEdge',
-      version     : '16.16299'
+    'sl_macOS_Mojave_Edge': {
+      "base"        : 'SauceLabs',
+      "browserName": 'MicrosoftEdge',
+      "browserVersion": 'latest',
+      "platformName": 'macOS 10.14',
+      "sauce:options": {}
     },
-    'sl_Win10_Edge_17'             : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 10',
-      browserName : 'MicrosoftEdge',
-      version     : '17.17134'
+    'sl_macOS_Mojave_Edge_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'MicrosoftEdge',
+      "browserVersion": 'latest-1',
+      "platformName": 'macOS 10.14',
+      "sauce:options": {}
     },
-    'sl_Win10_IE11'                : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 10',
-      browserName : 'Internet Explorer',
-      version     : '11.103'
+    'sl_Win10_Edge': {
+      "base"        : 'SauceLabs',
+      "browserName": 'MicrosoftEdge',
+      "browserVersion": 'latest',
+      "platformName": 'Windows 10',
+      "sauce:options": {}
     },
-    'sl_Win81_IE11'                : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 8.1',
-      browserName : 'Internet Explorer',
-      version     : '11.0'
+    'sl_Win10_Edge_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'MicrosoftEdge',
+      "browserVersion": 'latest-1',
+      "platformName": 'Windows 10',
+      "sauce:options": {}
     },
-    'sl_Win8_IE10'                 : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 8',
-      browserName : 'Internet Explorer',
-      version     : '10.0'
+    'sl_Win10_Chrome': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest',
+      "platformName": 'Windows 10',
+      "sauce:options": {}
     },
-    'sl_Win10_Chrome'              : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 10',
-      browserName : 'Chrome'
+    'sl_Win10_Chrome_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest-1',
+      "platformName": 'Windows 10',
+      "sauce:options": {}
     },
-    'sl_Win81_Chrome'              : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 8.1',
-      browserName : 'Chrome'
+    'sl_Win10_Firefox': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest',
+      "platformName": 'Windows 10',
+      "sauce:options": {}
     },
-    'sl_Win8_Chrome'               : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 8',
-      browserName : 'Chrome'
+    'sl_Win10_Firefox_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest-1',
+      "platformName": 'Windows 10',
+      "sauce:options": {}
     },
-    'sl_Win7_Chrome'               : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 7',
-      browserName : 'Chrome'
+    'sl_Win10_IE': {
+      "base"        : 'SauceLabs',
+      "browserName": 'internet explorer',
+      "browserVersion": 'latest',
+      "platformName": 'Windows 10',
+      "sauce:options": {}
     },
-    'sl_Win10_Firefox'             : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 10',
-      browserName : 'Firefox'
+    'sl_Win81_Chrome': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest',
+      "platformName": 'Windows 8.1',
+      "sauce:options": {}
     },
-    'sl_Win81_Firefox'             : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 8.1',
-      browserName : 'Firefox'
+    'sl_Win81_Chrome_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest-1',
+      "platformName": 'Windows 8.1',
+      "sauce:options": {}
     },
-    'sl_Win8_Firefox'              : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 8',
-      browserName : 'Firefox'
+    'sl_Win81_Firefox': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest',
+      "platformName": 'Windows 8.1',
+      "sauce:options": {}
     },
-    'sl_Win7_Firefox'              : {
-      base        : 'SauceLabs',
-      platform    : 'Windows 7',
-      browserName : 'Firefox'
-    }
+    'sl_Win81_Firefox_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest-1',
+      "platformName": 'Windows 8.1',
+      "sauce:options": {}
+    },
+    'sl_Win81_IE': {
+      "base"        : 'SauceLabs',
+      "browserName": 'internet explorer',
+      "browserVersion": 'latest',
+      "platformName": 'Windows 8.1',
+      "sauce:options": {}
+    },
+    'sl_Linux_Chrome': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest',
+      "platformName": 'Linux',
+      "sauce:options": {
+      }
+    },
+    'sl_Linux_Chrome_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'chrome',
+      "browserVersion": 'latest-1',
+      "platformName": 'Linux',
+      "sauce:options": {
+      }
+    },
+    'sl_Linux_Firefox': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest',
+      "platformName": 'Linux',
+      "sauce:options": {
+      }
+    },
+    'sl_Linux_Firefox_minus_1': {
+      "base"        : 'SauceLabs',
+      "browserName": 'firefox',
+      "browserVersion": 'latest-1',
+      "platformName": 'Linux',
+      "sauce:options": {
+      }
+    },
   };
 
   config.set({
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch : true,
+    autoWatch: true,
 
     // base path, that will be used to resolve files and exclude
-    basePath : '../',
+    basePath: '../',
 
     // testing framework to use (jasmine/mocha/qunit/...)
     // as well as any additional frameworks (requirejs/chai/sinon/...)
-    frameworks : [
+    frameworks: [
       "jasmine-jquery",
       "jasmine"
     ],
 
     // list of files / patterns to load in the browser
-    files : [
+    files: [
       "lzwCompress.js",
       "test/mock/**/*.js",
       "test/spec/**/*.js",
       // fixtures
-      {pattern : 'test/mock/*.json', watched : true, served : true, included : false}
+      {pattern: 'test/mock/*.json', watched: true, served: true, included: false}
     ],
 
     // list of files / patterns to exclude
-    exclude : [],
+    exclude: [],
 
     // web server port
-    port : 8080,
+    port: 8080,
 
     // Start these browsers, currently available:
     // - Chrome
@@ -188,10 +269,10 @@ module.exports = function (config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers : Object.keys(customLaunchers),
+    browsers: Object.keys(customLaunchers),
 
     // Which plugins to enable
-    plugins : [
+    plugins: [
       "karma-chrome-launcher",
       "karma-sauce-launcher",
       "karma-jasmine",
@@ -202,13 +283,13 @@ module.exports = function (config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun : false,
+    singleRun: false,
 
-    colors : true,
+    colors: true,
 
     // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-    logLevel : config.LOG_DEBUG,
+    logLevel: config.LOG_DEBUG,
 
     // Uncomment the following lines if you are using grunt's server to run the tests
     // proxies: {
@@ -218,43 +299,43 @@ module.exports = function (config) {
     // urlRoot: '_karma_'
 
     // coverage reporter generates the coverage
-    reporters : ['spec', 'coverage', 'saucelabs'],
+    reporters: ['spec', 'coverage', 'saucelabs'],
 
-    specReporter : {maxLogLines : 10},
+    specReporter: {maxLogLines: 10},
 
-    preprocessors : {
+    preprocessors: {
       // source files, that you wanna generate coverage for
       // do not include tests or libraries
       // (these files will be instrumented by Istanbul)
-      'lzwCompress.js' : ['coverage']
+      'lzwCompress.js': ['coverage']
     },
 
     // Sauce Labs config
-    sauceLabs       : {
-      testName          : 'lzwCompress.js on Sauce Labs',
-      recordScreenshots : false,
-      tunnelIdentifier  : process.env.TRAVIS_JOB_NUMBER,
-      startConnect      : false,
-      public            : 'public'
+    sauceLabs: {
+      testName: 'lzwCompress.js on Sauce Labs',
+      recordScreenshots: false,
+      tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
+      startConnect: false,
+      public: 'public'
     },
     // Increase timeout in case connection in CI is slow
-    captureTimeout  : 120000,
-    customLaunchers : customLaunchers,
+    captureTimeout: 120000,
+    customLaunchers: customLaunchers,
 
     // configure the reporter
-    coverageReporter : {
-      dir       : 'coverage/',
-      reporters : [
+    coverageReporter: {
+      dir: 'coverage/',
+      reporters: [
         // reporters not supporting the `file` property
-        {type : 'html', subdir : 'report-html'},
-        {type : 'lcov', subdir : 'report-lcov'},
+        {type: 'html', subdir: 'report-html'},
+        {type: 'lcov', subdir: 'report-lcov'},
         // reporters supporting the `file` property, use `subdir` to directly
         // output them in the `dir` directory
-        {type : 'cobertura', subdir : '.', file : 'cobertura.txt'},
-        {type : 'lcovonly', subdir : '.', file : 'report-lcovonly.txt'},
-        {type : 'teamcity', subdir : '.', file : 'teamcity.txt'},
-        {type : 'text', subdir : '.', file : 'text.txt'},
-        {type : 'text-summary', subdir : '.', file : 'text-summary.txt'}
+        {type: 'cobertura', subdir: '.', file: 'cobertura.txt'},
+        {type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt'},
+        {type: 'teamcity', subdir: '.', file: 'teamcity.txt'},
+        {type: 'text', subdir: '.', file: 'text.txt'},
+        {type: 'text-summary', subdir: '.', file: 'text-summary.txt'}
       ]
     }
   });
