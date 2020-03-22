@@ -17,218 +17,214 @@ module.exports = function (config) {
   // Check out https://saucelabs.com/platforms for all browser/OS combos
   var customLaunchers = {
     'sl_macOS_Catalina_Chrome': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest',
-      "platformName": 'macOS 10.15',
+      "version": 'latest',
+      "platform": 'macOS 10.15',
       "sauce:options": {}
     },
     'sl_macOS_Catalina_Chrome_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest-1',
-      "platformName": 'macOS 10.15',
+      "version": 'latest-1',
+      "platform": 'macOS 10.15',
       "sauce:options": {}
     },
     'sl_macOS_Catalina_Safari': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'safari',
-      "browserVersion": 'latest',
-      "platformName": 'macOS 10.15',
+      "version": 'latest',
+      "platform": 'macOS 10.15',
       "sauce:options": {}
     },
     'sl_macOS_Catalina_Firefox': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest',
-      "platformName": 'macOS 10.15',
+      "version": 'latest',
+      "platform": 'macOS 10.15',
       "sauce:options": {}
     },
     'sl_macOS_Catalina_Firefox_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest-1',
-      "platformName": 'macOS 10.15',
+      "version": 'latest-1',
+      "platform": 'macOS 10.15',
       "sauce:options": {}
     },
     'sl_macOS_Catalina_Edge': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'MicrosoftEdge',
-      "browserVersion": 'latest',
-      "platformName": 'macOS 10.15',
+      "version": 'latest',
+      "platform": 'macOS 10.15',
       "sauce:options": {}
     },
     'sl_macOS_Catalina_Edge_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'MicrosoftEdge',
-      "browserVersion": 'latest-1',
-      "platformName": 'macOS 10.15',
+      "version": 'latest-1',
+      "platform": 'macOS 10.15',
       "sauce:options": {}
     },
     'sl_macOS_Mojave_Chrome': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest',
-      "platformName": 'macOS 10.14',
+      "version": 'latest',
+      "platform": 'macOS 10.14',
       "sauce:options": {}
     },
     'sl_macOS_Mojave_Chrome_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest-1',
-      "platformName": 'macOS 10.14',
+      "version": 'latest-1',
+      "platform": 'macOS 10.14',
       "sauce:options": {}
     },
     'sl_macOS_Mojave_Safari': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'safari',
-      "browserVersion": 'latest',
-      "platformName": 'macOS 10.14',
+      "version": 'latest',
+      "platform": 'macOS 10.14',
       "sauce:options": {}
     },
     'sl_macOS_Mojave_Firefox': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest',
-      "platformName": 'macOS 10.14',
+      "version": 'latest',
+      "platform": 'macOS 10.14',
       "sauce:options": {}
     },
     'sl_macOS_Mojave_Firefox_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest-1',
-      "platformName": 'macOS 10.14',
+      "version": 'latest-1',
+      "platform": 'macOS 10.14',
       "sauce:options": {}
     },
     'sl_macOS_Mojave_Edge': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'MicrosoftEdge',
-      "browserVersion": 'latest',
-      "platformName": 'macOS 10.14',
+      "version": 'latest',
+      "platform": 'macOS 10.14',
       "sauce:options": {}
     },
     'sl_macOS_Mojave_Edge_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'MicrosoftEdge',
-      "browserVersion": 'latest-1',
-      "platformName": 'macOS 10.14',
+      "version": 'latest-1',
+      "platform": 'macOS 10.14',
       "sauce:options": {}
     },
     'sl_Win10_Edge': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'MicrosoftEdge',
-      "browserVersion": 'latest',
-      "platformName": 'Windows 10',
+      "version": 'latest',
+      "platform": 'Windows 10',
       "sauce:options": {}
     },
     'sl_Win10_Edge_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'MicrosoftEdge',
-      "browserVersion": 'latest-1',
-      "platformName": 'Windows 10',
+      "version": 'latest-1',
+      "platform": 'Windows 10',
       "sauce:options": {}
     },
     'sl_Win10_Chrome': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest',
-      "platformName": 'Windows 10',
+      "version": 'latest',
+      "platform": 'Windows 10',
       "sauce:options": {}
     },
     'sl_Win10_Chrome_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest-1',
-      "platformName": 'Windows 10',
+      "version": 'latest-1',
+      "platform": 'Windows 10',
       "sauce:options": {}
     },
     'sl_Win10_Firefox': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest',
-      "platformName": 'Windows 10',
+      "version": 'latest',
+      "platform": 'Windows 10',
       "sauce:options": {}
     },
     'sl_Win10_Firefox_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest-1',
-      "platformName": 'Windows 10',
+      "version": 'latest-1',
+      "platform": 'Windows 10',
       "sauce:options": {}
     },
     'sl_Win10_IE': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'internet explorer',
-      "browserVersion": 'latest',
-      "platformName": 'Windows 10',
+      "version": 'latest',
+      "platform": 'Windows 10',
       "sauce:options": {}
     },
     'sl_Win81_Chrome': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest',
-      "platformName": 'Windows 8.1',
+      "version": 'latest',
+      "platform": 'Windows 8.1',
       "sauce:options": {}
     },
     'sl_Win81_Chrome_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest-1',
-      "platformName": 'Windows 8.1',
+      "version": 'latest-1',
+      "platform": 'Windows 8.1',
       "sauce:options": {}
     },
     'sl_Win81_Firefox': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest',
-      "platformName": 'Windows 8.1',
+      "version": 'latest',
+      "platform": 'Windows 8.1',
       "sauce:options": {}
     },
     'sl_Win81_Firefox_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest-1',
-      "platformName": 'Windows 8.1',
+      "version": 'latest-1',
+      "platform": 'Windows 8.1',
       "sauce:options": {}
     },
     'sl_Win81_IE': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'internet explorer',
-      "browserVersion": 'latest',
-      "platformName": 'Windows 8.1',
+      "version": 'latest',
+      "platform": 'Windows 8.1',
       "sauce:options": {}
     },
     'sl_Linux_Chrome': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest',
-      "platformName": 'Linux',
-      "sauce:options": {
-      }
+      "version": 'latest',
+      "platform": 'Linux',
+      "sauce:options": {}
     },
     'sl_Linux_Chrome_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'chrome',
-      "browserVersion": 'latest-1',
-      "platformName": 'Linux',
-      "sauce:options": {
-      }
+      "version": 'latest-1',
+      "platform": 'Linux',
+      "sauce:options": {}
     },
     'sl_Linux_Firefox': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest',
-      "platformName": 'Linux',
-      "sauce:options": {
-      }
+      "version": 'latest',
+      "platform": 'Linux',
+      "sauce:options": {}
     },
     'sl_Linux_Firefox_minus_1': {
-      "base"        : 'SauceLabs',
+      "base": 'SauceLabs',
       "browserName": 'firefox',
-      "browserVersion": 'latest-1',
-      "platformName": 'Linux',
-      "sauce:options": {
-      }
+      "version": 'latest-1',
+      "platform": 'Linux',
+      "sauce:options": {}
     },
   };
 
